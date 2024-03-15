@@ -1,13 +1,15 @@
 
 import './App.css'
+import Navbar from './assets/components/Navbar/Navbar'
 
 function App() {
 
 
   return (
     <>
-      <h1>hello</h1>
-      <button className="btn">hi</button>
+      <div className='container mx-auto'>
+        <Navbar></Navbar>
+      </div>
     </>
   )
 }
