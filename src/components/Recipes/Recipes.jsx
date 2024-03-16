@@ -13,11 +13,8 @@ const Recipes = ({handleCookButton}) => {
     },[])
 
     return (
-        <div className="">
-            
-            
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
+        <div className="w-full lg:w-2/3 p-4 lg:p-0">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                {
                 recipes.map(recipe=><Recipe key={recipe.recipe_id} recipe={recipe} handleCookButton={handleCookButton}></Recipe>)
                }

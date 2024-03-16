@@ -8,36 +8,36 @@ const Cart = ({carts, counter, handlePreparingButton , cooking, cookingCounter})
     
 
 return (
-        <div className="w-full lg:w-[40%] p-4 lg:p-0">
-            <div className="card  bg-base-100 shadow-xl w-full">
-            <div className="card-body">
-               <div className="space-y-4">
+        <div className="w-full lg:w-1/3 p-4 lg:p-0">
+            <div className="bg-base-100 shadow-xl  rounded-lg p-2">
+            <div className="w-full">
+               <div className="space-y-4 w-full">
                <h2 className=" text-2xl font-semibold text-[#282828] text-center">Want to cook: {counter}</h2>
               
                 <div className="">
                 <div className="">
-                    <table className="table text-[#878787] font-medium">
-                        {/* <!-- head --> */}
+                    <table className="table text-[#878787] font-medium pl-0">
+                       
                         <thead>
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Time</th>
-                            <th>Calories</th>
+                        <tr className='pl-0'>
+                            <th className='pl-0'></th>
+                            <th className='pl-0'>Name</th>
+                            <th className='pl-0'>Time</th>
+                            <th className='pl-0'>Calories</th>
+                            <th className='pl-0'></th>
                         </tr>
                         </thead>
                         <tbody>
-                        {/* <!-- row 1 --> */}
 
                         {
                             carts.map((cart,index)=>{
                                 return(
-                                    <tr key={cart.recipe_id}>
+                                    <tr key={cart.recipe_id} className='pl-0'>
                                     <th className="font-semibold text-[#282828CC]">{index+1}</th>
-                                    <td>{cart.recipe_name}</td>
-                                    <td>{cart.preparing_time}</td>
-                                    <td>{cart.calories}</td>
-                                    <td><button onClick={()=>handlePreparingButton(cart)} className="btn bg-[#0BE58A] rounded-full text-[#150B2B] font-medium">Preparing</button></td>
+                                    <td className='pl-0'>{cart.recipe_name}</td>
+                                    <td className='pl-0'>{cart.preparing_time}</td>
+                                    <td className='pl-0'>{cart.calories}</td>
+                                    <td className='pl-0'><button onClick={()=>handlePreparingButton(cart)} className="p-3 bg-[#0BE58A] rounded-full text-[#150B2B] font-medium text-sm">Preparing</button></td>
                                     
                                 </tr>  
                                 )

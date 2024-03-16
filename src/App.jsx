@@ -13,11 +13,8 @@ function App() {
 
   const [carts, setCarts] = useState([]);
   const [counter,setCounter] = useState(0);
-  const [cookingCounter,setCookingCounter] = useState(0)
- 
-  
-  
-  
+  const [cookingCounter,setCookingCounter] = useState(0);
+
   const handleCookButton = (recipe)=>{
     const isExits = carts.find(c=>c.recipe_id === recipe.recipe_id);
     
