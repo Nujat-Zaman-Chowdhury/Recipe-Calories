@@ -1,8 +1,8 @@
 [
     {
       "recipe_id": "1",
-      "recipe_name": "https://i.ibb.co/YXqM6gR/chicken-stir-fry.jpg",
-      "recipe_image": "chicken_stir_fry.jpg",
+      "recipe_name": "Chicken Stir Fry",
+      "recipe_image": "https://i.ibb.co/YXqM6gR/chicken-stir-fry.jpg",
       "short_description": "A delicious and easy-to-make chicken stir fry with vegetables.",
       "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaf", "400 g mushroom"],
       "preparing_time": "30 min",
@@ -10,8 +10,8 @@
     },
     {
       "recipe_id": "2",
-      "recipe_name": "Vegetable Pasta",
-      "recipe_image": "https://i.ibb.co/gSxmX9r/Vegetable-Pasta.jpg",
+      "recipe_name": "Spaghetti Bolognese",
+      "recipe_image": "https://i.ibb.co/hXbhSVx/Spaghetti-Bolognese.jpg",
       "short_description": "A healthy and colorful vegetable pasta dish.",
       "ingredients": ["300 g pasta", "2 bell peppers", "1 zucchini", "1 onion", "200 g cherry tomatoes"],
       "preparing_time": "25 min",
