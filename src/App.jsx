@@ -5,6 +5,8 @@ import Cart from './components/Cart/Cart'
 import Navbar from './components/Navbar/Navbar'
 import Recipes from './components/Recipes/Recipes'
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export let count = 0;
 function App() {
@@ -20,7 +22,8 @@ function App() {
     const isExits = carts.find(c=>c.recipe_id === recipe.recipe_id);
     
     if(isExits){
-      alert("already added");
+      // alert("already added");
+      toast("Already Exist!");
     }
     else{
     const newCarts = [...carts,recipe]
@@ -56,9 +59,10 @@ function App() {
                 <h1 className='text-2xl lg:text-4xl text-[#150B2B] font-semibold'>Our Recipes</h1>
                 <p className='w-full lg:w-[800px] text-[#150B2B99] mx-auto'>Each recipe carries with it a legacy of tradition, innovation, and personal interpretation, inviting cooks to infuse their own creativity and personality into every dish they prepare.</p>
         </div>
-        <div className='flex gap-4 mt-10'>
-        <Recipes handleCookButton={handleCookButton} ></Recipes>
+        <div className='flex flex-col lg:flex-row gap-4 mt-10'>
+        <Recipes handleCookButton={handleCookButton}></Recipes>
         <Cart carts={carts} counter={counter} handlePreparingButton={handlePreparingButton} cooking={cooking} cookingCounter={cookingCounter}></Cart>
+        <ToastContainer></ToastContainer>
         </div>
         </div>
       </div>

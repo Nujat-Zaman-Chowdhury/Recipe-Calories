@@ -1,14 +1,14 @@
-import { useState } from "react";
 
 
 
+import PropTypes from 'prop-types';
 
 const Cart = ({carts, counter, handlePreparingButton , cooking, cookingCounter}) => {
 
     
 
 return (
-        <div className="w-[35%]">
+        <div className="w-full lg:w-[40%] p-4 lg:p-0">
             <div className="card  bg-base-100 shadow-xl w-full">
             <div className="card-body">
                <div className="space-y-4">
@@ -32,12 +32,13 @@ return (
                         {
                             carts.map((cart,index)=>{
                                 return(
-                                    <tr key={cart.id}>
+                                    <tr key={cart.recipe_id}>
                                     <th className="font-semibold text-[#282828CC]">{index+1}</th>
                                     <td>{cart.recipe_name}</td>
                                     <td>{cart.preparing_time}</td>
                                     <td>{cart.calories}</td>
                                     <td><button onClick={()=>handlePreparingButton(cart)} className="btn bg-[#0BE58A] rounded-full text-[#150B2B] font-medium">Preparing</button></td>
+                                    
                                 </tr>  
                                 )
                             })
@@ -90,8 +91,8 @@ return (
                         <tr>
                             <td></td>
                             <td></td>
-                            <td>Total Time =   minutes</td>
-                            <td>Total Calories =  calories</td>
+                            <td>Total Time = {cooking.reduce((p,c)=> p+c.preparing_time, 0)}   minutes</td>
+                            <td>Total Calories = {cooking.reduce((p,c)=> p+c.calories, 0)}  calories</td>
                         </tr>
                         </tbody>
                     </table>
@@ -104,5 +105,11 @@ return (
         
     );
 };
-
+Cart.propTypes = {
+    carts: PropTypes.array,
+    cooking: PropTypes.array,
+    counter: PropTypes.number,
+    cookingCounter: PropTypes.number,
+    handlePreparingButton:PropTypes.func
+}
 export default Cart;
