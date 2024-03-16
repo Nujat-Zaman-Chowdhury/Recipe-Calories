@@ -1,13 +1,13 @@
-import { count } from "../../App";
+import { useState } from "react";
 
 
-const Cart = ({carts, counter}) => {
 
-    // const {recipe_id,recipe_name,preparing_time,calories} = carts;
-    // console.log(recipe_name);
-    console.log(carts);
 
-    return (
+const Cart = ({carts, counter, handlePreparingButton , cooking, cookingCounter}) => {
+
+    
+
+return (
         <div className="w-[35%]">
             <div className="card  bg-base-100 shadow-xl w-full">
             <div className="card-body">
@@ -37,7 +37,7 @@ const Cart = ({carts, counter}) => {
                                     <td>{cart.recipe_name}</td>
                                     <td>{cart.preparing_time}</td>
                                     <td>{cart.calories}</td>
-                                    <td><button className="btn bg-[#0BE58A] rounded-full text-[#150B2B] font-medium">Preparing</button></td>
+                                    <td><button onClick={()=>handlePreparingButton(cart)} className="btn bg-[#0BE58A] rounded-full text-[#150B2B] font-medium">Preparing</button></td>
                                 </tr>  
                                 )
                             })
@@ -51,12 +51,12 @@ const Cart = ({carts, counter}) => {
             {/* ----------------------------- */}
 
                <div className="mt-8 space-y-4">
-               <h2 className=" text-2xl font-semibold text-[#282828] text-center">Currently cooking: 02</h2>
+               <h2 className=" text-2xl font-semibold text-[#282828] text-center">Currently cooking: {cookingCounter}</h2>
                
-                <div className="">
-                <div className="">
+                
+               <div className="">
                     <table className="table text-[#878787] font-medium">
-                        {/* <!-- head --> */}
+                        
                         <thead>
                         <tr>
                             <th></th>
@@ -66,29 +66,42 @@ const Cart = ({carts, counter}) => {
                         </tr>
                         </thead>
                         <tbody>
-                        {/* <!-- row 1 --> */}
-                        <tr>
+
+                        {
+                            cooking.map((item,index)=>{
+                                return(
+                                    <tr key={item.id}>
+                                        <th className="font-semibold text-[#282828CC]">{index+1}</th>
+                                        <td>{item.recipe_name}</td>
+                                        <td>{item.preparing_time}</td>
+                                        <td>{item.calories}</td>   
+                                    </tr>
+                                )
+                            })
+                        }
+                        
+                        {/* <tr>
                             <th className="font-semibold text-[#282828CC]">1</th>
                             <td>Chicken Caesar Salad</td>
                             <td>20 minutes</td>
                             <td>400 calories</td>
-                            <td><button className="btn bg-[#0BE58A] rounded-full text-[#150B2B] font-medium">Preparing</button></td>
-                        </tr>
+                            
+                        </tr> */}
                         <tr>
                             <td></td>
                             <td></td>
-                            <td>Total Time = 45 minutes</td>
-                            <td>Total Calories = 1050 calories</td>
+                            <td>Total Time =   minutes</td>
+                            <td>Total Calories =  calories</td>
                         </tr>
                         </tbody>
                     </table>
-                    </div>
+                    </div> 
                 </div>
                </div>
                
             </div>
             </div>
-        </div>
+        
     );
 };
 

@@ -4,6 +4,7 @@ import Recipe from "../Recipe/Recipe";
 const Recipes = ({handleCookButton}) => {
 
     const [recipes, setRecipes] = useState([])
+    
 
     useEffect(()=>{
         fetch('./fakeData.json')

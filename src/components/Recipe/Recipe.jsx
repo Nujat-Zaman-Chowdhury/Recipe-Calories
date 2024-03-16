@@ -1,9 +1,12 @@
 
 import { IoTimeOutline } from "react-icons/io5";
 import { AiOutlineFire } from "react-icons/ai";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Recipe = ({recipe, handleCookButton}) => {
     const {recipe_id,recipe_name,recipe_image,short_description,ingredients,preparing_time,calories} = recipe;
     return (
+        
         <div className='font-fira w-[70%]'>
            <div className="card w-96 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
@@ -18,6 +21,7 @@ const Recipe = ({recipe, handleCookButton}) => {
                 <ul className='text-[#878787] space-y-2'>
                     {
                         ingredients.slice(0,3).map(ingredient=><li key={recipe_id} className="list-disc ml-4">{ingredient}</li>)
+                        
                     }
                 </ul>
                 </div>
@@ -34,7 +38,9 @@ const Recipe = ({recipe, handleCookButton}) => {
                 <button onClick={()=>handleCookButton(recipe)} className="btn bg-[#0BE58A] rounded-full text-[#150B2B] font-medium">Want to Cook</button>
                 </div>
             </div>
+            
             </div>
+            
         </div>
     );
 };

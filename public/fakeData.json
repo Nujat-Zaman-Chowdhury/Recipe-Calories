@@ -5,8 +5,8 @@
       "recipe_image": "https://i.ibb.co/YXqM6gR/chicken-stir-fry.jpg",
       "short_description": "A delicious and easy-to-make chicken stir fry with vegetables.",
       "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaf", "400 g mushroom"],
-      "preparing_time": "30 min",
-      "calories": "320 calories"
+      "preparing_time": "30",
+      "calories": "320"
     },
     {
       "recipe_id": "2",
@@ -14,8 +14,8 @@
       "recipe_image": "https://i.ibb.co/hXbhSVx/Spaghetti-Bolognese.jpg",
       "short_description": "A healthy and colorful vegetable pasta dish.",
       "ingredients": ["300 g pasta", "2 bell peppers", "1 zucchini", "1 onion", "200 g cherry tomatoes"],
-      "preparing_time": "25 min",
-      "calories": "250 calories"
+      "preparing_time": "25",
+      "calories": "250"
     },
     {
       "recipe_id": "3",
@@ -23,8 +23,8 @@
       "recipe_image": "https://i.ibb.co/PCMWxqb/grilled-salmon.jpg",
       "short_description": "Juicy grilled salmon seasoned to perfection.",
       "ingredients": ["4 salmon fillets", "2 tbsp olive oil", "1 lemon", "Salt and pepper"],
-      "preparing_time": "20 min",
-      "calories": "350 calories"
+      "preparing_time": "20",
+      "calories": "350"
     },
     {
       "recipe_id": "4",
@@ -32,8 +32,8 @@
       "recipe_image": "https://i.ibb.co/JqYPq12/Mushroom-Risotto.jpg",
       "short_description": "Creamy and flavorful mushroom risotto.",
       "ingredients": ["300 g Arborio rice", "200 g mushrooms", "1 onion", "1 L vegetable broth"],
-      "preparing_time": "40 min",
-      "calories": "380 calories"
+      "preparing_time": "40",
+      "calories": "380"
     },
     {
       "recipe_id": "5",
@@ -41,8 +41,8 @@
       "recipe_image": "https://i.ibb.co/yFk4f21/Caprese-Salad.jpg",
       "short_description": "A classic Italian salad with fresh tomatoes, mozzarella, and basil.",
       "ingredients": ["4 tomatoes", "200 g mozzarella cheese", "Fresh basil leaves", "2 tbsp balsamic vinegar"],
-      "preparing_time": "15 min",
-      "calories": "200 calories"
+      "preparing_time": "15",
+      "calories": "200"
     },
     {
       "recipe_id": "6",
@@ -50,8 +50,8 @@
       "recipe_image": "https://i.ibb.co/crwL2qw/Banana-Bread.jpg",
       "short_description": "Moist and delicious homemade banana bread.",
       "ingredients": ["3 ripe bananas", "200 g all-purpose flour", "100 g butter", "100 g sugar", "2 eggs"],
-      "preparing_time": "50 min",
-      "calories": "220 calories"
+      "preparing_time": "50",
+      "calories": "220"
     }
   ]
   
