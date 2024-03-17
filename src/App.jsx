@@ -52,11 +52,11 @@ function App() {
       <div className='container mx-auto'>
         <Navbar></Navbar>
         <div>
-        <div className='mt-12 text-center space-y-6 p-5'>
+        <div className='mt-7 lg:mt-12 text-center space-y-6 p-5'>
                 <h1 className='text-2xl lg:text-4xl text-[#150B2B] font-semibold'>Our Recipes</h1>
                 <p className='w-full lg:w-[800px] text-[#150B2B99] mx-auto'>Each recipe carries with it a legacy of tradition, innovation, and personal interpretation, inviting cooks to infuse their own creativity and personality into every dish they prepare.</p>
         </div>
-        <div className='flex flex-col lg:flex-row gap-4 mt-10'>
+        <div className='flex flex-col lg:flex-row gap-4 mt-5 lg:mt-10'>
         <Recipes handleCookButton={handleCookButton}></Recipes>
         <Cart carts={carts} counter={counter} handlePreparingButton={handlePreparingButton} cooking={cooking} cookingCounter={cookingCounter}></Cart>
         <ToastContainer></ToastContainer>
