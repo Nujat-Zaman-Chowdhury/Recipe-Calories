@@ -58,7 +58,7 @@ const Navbar = () => {
     
         {/* banner */}
         <div className="mt-7 h-full lg:h-[100vh] rounded-2xl">
-            <div className="bg-[linear-gradient(0deg,rgba(21,11,43,0.90),rgba(21,11,43,0.00)),url('./assets/images/banner.jpeg')] w-full h-full bg-cover bg-no-repeat rounded-2xl">
+            <div className="bg-[linear-gradient(0deg,rgba(21,11,43,0.90),rgba(21,11,43,0.00)),url('./assets/images/banner.jpeg')] h-full bg-cover bg-center bg-no-repeat rounded-2xl">
                 <div className="flex justify-center items-center w-full h-full px-3 lg:px-0 py-5 lg:py-24 space-y-4">
                     <div className="text-white text-center  mx-auto">
                     <h3 className="text-2xl lg:text-6xl font-bold leading-10">Discover an exceptional cooking <br></br> class tailored for you!</h3>
